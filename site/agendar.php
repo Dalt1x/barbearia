@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 
-    $sql = "INSERT INTO Agendamentos (id_servico, data, horario, nome_cliente, telefone_cliente) VALUES (?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO agendamentos (id_servico, data, horario, nome_cliente, telefone_cliente) VALUES (?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("issss", $id_servico, $data, $horario, $nome_cliente, $telefone_cliente);
 

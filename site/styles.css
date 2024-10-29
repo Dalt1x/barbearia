@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-a { 
-    color: currentColor;
-    text-decoration: none;
- } 
-
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f0f0;
@@ -18,6 +13,7 @@ body {
     align-items: center;
     height: 100vh;
     padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .container {
@@ -35,10 +31,9 @@ body {
 }
 
 .logo {
-    width: 150px; /* Ajuste o tamanho conforme necessário */
-    height: auto; /* Mantém a proporção */
-    display: block;
-    margin: 0 auto; /* Centraliza a logo na página */
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 h1 {
@@ -161,118 +156,6 @@ input:focus, select:focus {
     }
 }
 
-/* Estilos para o modal de informações */
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-content {
-    background-color: white;
-    border-radius: 8px;
-    padding: 20px;
-    width: 90%;
-    max-width: 500px;
-    position: relative;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.modal-content h2 {
-    color: #4A90E2;
-    margin-bottom: 20px;
-}
-
-.info-section {
-    margin-bottom: 20px;
-}
-
-.info-section h3 {
-    color: #333;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table td {
-    padding: 5px;
-    border-bottom: 1px solid #ccc;
-}
-
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
-.map {
-    width: 100%;
-    height: auto;
-    margin-top: 10px;
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    color: #333;
-    cursor: pointer;
-}
-
-.profile-info {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.tabs {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-}
-
-.tab-button {
-    padding: 10px 20px;
-    background-color: #4A90E2;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.tab-content {
-    display: none;
-}
-
-.appointment {
-    display: flex;
-    flex-direction: column;
-    background-color: #f0f0f0;
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.appointment-info p {
-    margin: 5px 0;
-    color: #333;
-}
-
-/* css para o botão do modo escuro */
-
-/* Estilos básicos */
-body {
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Estilos para o botão */
 .dark-mode-toggle {
     position: fixed;
     top: 20px;
@@ -290,7 +173,6 @@ body {
     background-color: #357ABD;
 }
 
-/* Modo Escuro */
 .dark-mode {
     background-color: #121212;
     color: #e0e0e0;
